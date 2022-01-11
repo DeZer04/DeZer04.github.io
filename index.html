@@ -186,44 +186,61 @@
         </section>
 
         <section class="secondary">
-            <div class="chart">
-                <h2>Total Course</h2>
-                <canvas id="myChart" width="400" height="400"></canvas>
-            </div>
+            <div id="chat-sidebar">
+
+                <div id="sidebar-user-box" class="100" >
+                <img src="assets/images/user.png" />
+                <span id="slider-username">Sumit Kumar Pradhan </span>
+                </div> 
+                
+                <div id="sidebar-user-box" class="101" >
+                <img src="assets/images/user.png" />
+                <span id="slider-username">Skptricks </span>
+                </div> 
+                
+                <div id="sidebar-user-box" class="102" >
+                <img src="assets/images/user.png" />
+                <span id="slider-username">Amit Singh </span>
+                </div> 
+                
+                <div id="sidebar-user-box" class="103" >
+                <img src="assets/images/user.png" />
+                <span id="slider-username">Neeraj Tiwari </span>
+                </div> 
+                
+                <div id="sidebar-user-box" class="104"  >
+                <img src="assets/images/user.png" />
+                <span id="slider-username">Sorav Singh </span>
+                </div> 
+                
+                <div id="sidebar-user-box" class="105" >
+                <img src="assets/images/user.png" />
+                <span id="slider-username">Lokesh Singh </span>
+                </div> 
+                
+                <div id="sidebar-user-box" class="106" >
+                <img src="assets/images/user.png" />
+                <span id="slider-username">Tony </span>
+                </div> 
+                
+                <div id="sidebar-user-box" class="107" >
+                <img src="assets/images/user.png" />
+                <span id="slider-username">Alex Robby </span>
+                </div> 
+                
+                <div id="sidebar-user-box" class="108" >
+                <img src="assets/images/user.png" />
+                <span id="slider-username">Pragaya Mishra </span>
+                </div> 
+                
+                <div id="sidebar-user-box" class="109" >
+                <img src="assets/images/user.png" />
+                <span id="slider-username">Abhishek Mishra </span>
+                </div> 
+                 
+                </div> 
         </section>
     </div>
-
-    <script>
-        const ctx = document.getElementById('myChart').getContext('2d');
-        const myChart = new Chart(ctx, {
-            type: 'doughnut',
-            data : {
-                labels: [
-                    'Red',
-                    'Blue',
-                    'Yellow'
-                ],
-                datasets: [{
-                    label: 'My First Dataset',
-                    data: [300, 50, 100],
-                    backgroundColor: [
-                    'rgb(255, 99, 132)',
-                    'rgb(54, 162, 235)',
-                    'rgb(255, 205, 86)'
-                    ],
-                    hoverOffset: 4
-                }]
-            },
-            options: {
-                scales: {
-                    y: {
-                        beginAtZero: true
-                    }
-                }
-            }
-        });
-        </script>
-         
 </body>    
 </body>
 </html>

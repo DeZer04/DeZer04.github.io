@@ -1,248 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Amik Dashboard</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
-    <script src="assets/js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+    <title>E-AMIK Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
+
 <body>
-    <div class="dashboard">
-        <section class="navigation"> 
-            <img src="assets/images/logo.png" alt="EAmik Logo">
 
-            <div>
-                <span class="material-icons-outlined"> dashboard </span>
-                <span class="material-icons-outlined"> groups </span>
-                <span class="material-icons-outlined"> payments </span>
-                <span class="material-icons-outlined"> fact_check </span>
-                <span class="material-icons-outlined"> class </span>
-                <span class="material-icons-outlined"> settings </span>
+    <div class="sidebar-nav">
+        <div class="logo">
+            <a href="#">
+                <h1>E-AMIK</h1>
+            </a>
+            <a href="#">
+                <img src="img/logo-2.png">
+            </a>
+        </div>
+        <div class="profile">
+            <div class="avtar">
+                <img src="img/avtar.png">
             </div>
-        </section>
-        
-        <section class="main">
-            <div class="search">
-                <form action="#">
-                    <input type="text" name="search" id="search" placeholder="Search Here">
-                    <span class="material-icons-outlined"> search </span>
-                </form>
-                <div class="notification">
-                    <span class="material-icons-outlined"> notifications </span>
-                    <span class="material-icons-outlined"> edit </span>
-                </div>
+            <div class="name-pos">
+                <h3>Charisma Deo Sagitarius</h3>
+                <h5>Student</h5>
             </div>
-
-            <div class="title">
-                <h1>Dashboard</h1>
-                <form action="">
-                    <label for="main">Sort By</label>
-                    <select name="main" id="main">
-                        <option value="smt1"> Semester 1 </option>
-                        <option value="smt2"> Semester 2 </option>
-                        <option value="smt3"> Semester 3 </option>
-                        <option value="smt4"> Semester 4 </option>
-                        <option value="smt5"> Semester 5 </option>
-                        <option value="smt6"> Semester 6 </option>
-                        <option value="smt7"> Semester 7 </option>
-                        <option value="smt8"> Semester 8 </option>
-                    </select>
-                </form>
-            </div>
-
-            <div class="main_list">
-
-                <div class="main">
-                    <div class="category"></div>
-                    <h2>Pemrograman Dasar</h2>
-                    <p>Semester 3</p>
-
-                    <ul class="assigment">
-                        <li>Project UTS</li>
-                        <li>Tugas Pointer</li>
-                        <li>Project UAS</li>
-                    </ul>
-
-                    <div class="meta">
-                        <div class="contributors">
-                            <img src="assets/images/img1.jpg" alt="">
-                            <img src="assets/images/img2.jpg" alt="">
-                            <img src="assets/images/img3.jpg" alt="">
-                        </div>
-                        <span class="material-icons-outlined"> more_vert </span>
-                    </div>
-                </div>
-
-                <div class="main">
-                    <div class="category"></div>
-                    <h2>Desain Web</h2>
-                    <p>Semester 3</p>
-
-                    <ul class="assigment">
-                        <li>Project UTS</li>
-                        <li>Tugas Bootstrap</li>
-                        <li>Project UAS</li>
-                    </ul>
-
-                    <div class="meta">
-                        <div class="contributors">
-                            <img src="assets/images/img1.jpg" alt="">
-                            <img src="assets/images/img8.jpg" alt="">
-                            <img src="assets/images/img9.jpg" alt="">
-                        </div>
-                        <span class="material-icons-outlined"> more_vert </span>
-                    </div>
-
-                </div>
-
-                <div class="main">
-                    <div class="category"></div>
-                    <h2>Desain Animasi</h2>
-                    <p>Semester 3</p>
-
-                    <ul class="assigment">
-                        <li>Project UTS</li>
-                        <li>Tugas Maya</li>
-                        <li>Project UAS</li>
-                    </ul>
-
-                    <div class="meta">
-                        <div class="contributors">
-                            <img src="assets/images/img1.jpg" alt="">
-                            <img src="assets/images/img7.jpg" alt="">
-                            <img src="assets/images/img9.jpg" alt="">
-                        </div>
-                        <span class="material-icons-outlined"> more_vert </span>
-                    </div>
-
-                </div>
-
-                <div class="main">
-                    <div class="category"></div>
-                    <h2>Dasar Jaringan Komputer</h2>
-                    <p>Semester 3</p>
-
-                    <ul class="assigment"></ul>
-                        <li>Tugas Cisco</li>
-                    </ul>
-
-                    <div class="meta">
-                        <div class="contributors">
-                            <img src="assets/images/img1.jpg" alt="">
-                            <img src="assets/images/img6.jpg" alt="">
-                            <img src="assets/images/img4.jpg" alt="">
-                        </div>
-                        <span class="material-icons-outlined"> more_vert </span>
-                    </div>
-
-                </div>
-
-                <div class="main">
-                    <div class="category"></div>
-                    <h2>Sistem Informasi Manajemen</h2>
-                    <p>Semester 3</p>
-
-                    <ul class="assigment"></ul>
-                        <li>Tugas 1</li>
-                    </ul>
-
-                    <div class="meta">
-                        <div class="contributors">
-                            <img src="assets/images/img1.jpg" alt="">
-                            <img src="assets/images/img4.jpg" alt="">
-                            <img src="assets/images/img5.jpg" alt="">
-                        </div>
-                        <span class="material-icons-outlined"> more_vert </span>
-                    </div>
-
-                </div>
-
-                <div class="main">
-                    <div class="category"></div>
-                    <h2>Praktikum Pemrograman Dasar</h2>
-                    <p>Semester 3</p>
-
-                    <ul class="assigment"></ul>
-                        <li>Tugas 1</li>
-                    </ul>
-
-                    <div class="meta">
-                        <div class="contributors">
-                            <img src="assets/images/img2.jpg" alt="">
-                            <img src="assets/images/img6.jpg" alt="">
-                            <img src="assets/images/img7.jpg" alt="">
-                        </div>
-                        <span class="material-icons-outlined"> more_vert </span>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="secondary">
-            <div id="chat-sidebar">
-
-                <div id="sidebar-user-box" class="100" >
-                <img class="img-msg" src="assets/images/user.png" />
-                <span id="slider-username">Sumit Kumar Pradhan </span>
-                </div> 
-                
-                <div id="sidebar-user-box" class="101" >
-                <img class="img-msg" src="assets/images/user.png" />
-                <span id="slider-username">Skptricks </span>
-                </div> 
-                
-                <div id="sidebar-user-box" class="102" >
-                <img class="img-msg" src="assets/images/user.png" />
-                <span id="slider-username">Amit Singh </span>
-                </div> 
-                
-                <div id="sidebar-user-box" class="103" >
-                <img class="img-msg" src="assets/images/user.png" />
-                <span id="slider-username">Neeraj Tiwari </span>
-                </div> 
-                
-                <div id="sidebar-user-box" class="104"  >
-                <img class="img-msg" src="assets/images/user.png" />
-                <span id="slider-username">Sorav Singh </span>
-                </div> 
-                
-                <div id="sidebar-user-box" class="105" >
-                <img class="img-msg" src="assets/images/user.png" />
-                <span id="slider-username">Lokesh Singh </span>
-                </div> 
-                
-                <div id="sidebar-user-box" class="106" >
-                <img class="img-msg" src="assets/images/user.png" />
-                <span id="slider-username">Tony </span>
-                </div> 
-                
-                <div id="sidebar-user-box" class="107" >
-                <img class="img-msg" src="assets/images/user.png" />
-                <span id="slider-username">Alex Robby </span>
-                </div> 
-                
-                <div id="sidebar-user-box" class="108" >
-                <img class="img-msg" src="assets/images/user.png" />
-                <span id="slider-username">Pragaya Mishra </span>
-                </div> 
-                
-                <div id="sidebar-user-box" class="109" >
-                <img class="img-msg" src="assets/images/user.png" />
-                <span id="slider-username">Abhishek Mishra </span>
-                </div> 
-                 
-                </div> 
-        </section>
+        </div>
+        <div class="side-nav">
+            <ul>
+                <li>
+                    <span><i class="fas fa-home"></i></span>
+                    <a href="#">Dashboard</a>
+                </li>
+                <li>
+                    <span><i class="fas fa-house-user"></i></span>
+                    <a href="#">Teams</a>
+                </li>
+                <li>
+                    <span><i class="fas fa-wallet"></i></span>
+                    <a href="#">Payments</a>
+                </li>
+                <li>
+                    <span><i class="fas fa-calendar-check"></i></span>
+                    <a href="#">Attendance</a>
+                </li>
+                <li>
+                    <span><i class="fas fa-book-reader"></i></span>
+                    <a href="#">Course</a>
+                </li>
+                <li>
+                    <span><i class="fas fa-cogs"></i></span>
+                    <a href="#">Setting</a>
+                </li>
+                <li>
+                    <span><i class="fas fa-sign-out-alt"></i></span>
+                    <a href="#">Log Out</a>
+                </li>
+            </ul>
+        </div>
     </div>
-</body>    
+
+    <header>
+        <div class="head-inner">
+            <div class="left-part">
+                <form>
+                    <input type="text" placeholder="Search.." required>
+                    <button type="submit"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+            <div class="right-part">
+                <ul>
+                    <li class="user">
+                        <div class="avtar">
+                            <img src="img/avtar.png" alt="" srcset="">
+                        </div>
+                        <div class="name-pos">
+                            <h2>Charisma Deo Sagitarius</h2>
+                        </div>
+                    </li>
+                    <li class="notifiaction">
+                        <span><i class="far fa-envelope"></i></span>
+                    </li>
+                    <li class="notifiaction">
+                        <span><i class="far fa-bell"></i></span>
+                    </li>
+                    <li>
+                        <span class="bar"><i class="fas fa-bars"></i></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="main_contant">
+
+        <div class="bread-crumbs">
+            <ul>
+                <li>
+                    <span><i class="fas fa-home"></i></span>
+                    <h3>Dashboard</h3>
+                </li>
+            </ul>
+        </div>
+
+        <div class="info_card">
+            <div class="card">
+                <span><i class="fas fa-user-alt"></i></span>
+                <div class="number_detail">
+                    <p>Total User</p>
+                    <h2>1342</h2>
+                </div>
+            </div>
+            <div class="card">
+                <span><i class="fas fa-book"></i></span>
+                <div class="number_detail">
+                    <p>Total Course</p>
+                    <h2>200</h2>
+                </div>
+            </div>
+            <div class="card">
+                <span><i class="fas fa-male"></i></span>
+                <div class="number_detail">
+                    <p>Total Lecturer</p>
+                    <h2>103</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="content_table">
+            <div class="title">
+                <h2>List Of Course</h2>
+            </div>
+            <div class="main">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Name</td>
+                            <td>Lecturer</td>
+                            <td>Semester</td>
+                            <td>Joined</td>
+                            <td>Status</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pemrograman Dasar</td>
+                            <td>Sri Widiyanti</td>
+                            <td>3</td>
+                            <td>25 January, 2021</td>
+                            <td><a href="#" class="btn">Active</a></td>
+                        </tr>
+                        <tr>
+                            <td>Desain Web</td>
+                            <td>Miftakhur rohmat</td>
+                            <td>3</td>
+                            <td>1 jun, 2019</td>
+                            <td><a href="#" class="btn">Active</a></td>
+                        </tr>
+                        <tr>
+                            <td>Desain Multimedia Digital</td>
+                            <td>Febrianta</td>
+                            <td>3</td>
+                            <td>1 jun, 2019</td>
+                            <td><a href="#" class="btn">Active</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="js/jquery.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $(".bar").click(function() {
+                $(".sidebar-nav").toggleClass("hide")
+                $("header , .main_contant").toggleClass("slide-left")
+            })
+        });
+    </script>
+
 </body>
+
 </html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zxx" class="js">
+
+<head>
+    <base href="../">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="E-Amik Dashboard">
+    <!-- Fav Icon  -->
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <!-- Page Title  -->
+    <title>Student Invoice Print | E-Amik </title>
+    <!-- StyleSheets  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="bg-white" onload="printPromot()">
+    <div class="nk-block">
+        <div class="invoice invoice-print">
+            <div class="invoice-wrap">
+                <div class="invoice-brand text-center">
+                    <img src="./images/logo-dark.png" srcset="./images/logo-dark2x.png 2x" alt="">
+                </div>
+                <div class="invoice-head">
+                    <div class="invoice-contact">
+                        <span class="overline-title">Invoice To</span>
+                        <div class="invoice-contact-info">
+                            <h4 class="title">Charisma Deo Sagitarius</h4>
+                            <ul class="list-plain">
+                                <li><em class="icon ni ni-map-pin-fill"></em><span>Wonowoso RT 05/ RW 12, Mojosongo<br>Jebres, Surakarta, 57127</span></li>
+                                <li><em class="icon ni ni-call-fill"></em><span>+62 8515 6581 780</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="invoice-desc">
+                        <h3 class="title">Invoice</h3>
+                        <ul class="list-plain">
+                            <li class="invoice-id"><span>Invoice ID</span>:<span>SMT301</span></li>
+                            <li class="invoice-date"><span>Date</span>:<span>01 Februari 2022</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- .invoice-head -->
+                <div class="invoice-bills">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Item ID</th>
+                                    <th>Deskripsi</th>
+                                    <th>Nominal</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>01</td>
+                                    <td>Biaya Sarana dan Prasarana</td>
+                                    <td>Rp. 0</td>
+                                </tr>
+                                <tr>
+                                    <td>02</td>
+                                    <td>Biaya Pengembangan Instansi</td>
+                                    <td>Rp. 0</td>
+                                </tr>
+                                <tr>
+                                    <td>03</td>
+                                    <td>SPP Bulan</td>
+                                    <td>Rp. 2.495.000</td>
+                                </tr>
+                                <tr>
+                                    <td>04</td>
+                                    <td>SPP Tetap</td>
+                                    <td>Rp. 0</td>
+                                </tr>
+                                <tr>
+                                    <td>05</td>
+                                    <td>SPP VAriabel</td>
+                                    <td>Rp. 0</td>
+                                </tr>
+                                <tr>
+                                    <td>06</td>
+                                    <td>Lain-Lain</td>
+                                    <td>Rp. 0</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="2">Total</td>
+                                    <td colspan="2">Rp. 2.495.000</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <div class="nk-notes ff-italic fs-12px text-soft"> Invoice was created on a computer and is valid without the signature and seals. </div>
+                    </div>
+                </div>
+                <!-- .invoice-bills -->
+            </div>
+            <!-- .invoice-wrap -->
+        </div>
+        <!-- .invoice -->
+    </div>
+    <!-- .nk-block -->
+    <script>
+        function printPromot() {
+            window.print();
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="zxx" class="js">
+
+<head>
+    <base href="../">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="E-Amik Dashboard">
+    <!-- Fav Icon  -->
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <!-- Page Title  -->
+    <title>Chats | E-Amik </title>
+    <!-- StyleSheets  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="nk-body bg-lighter npc-general has-sidebar ">
+    <div class="nk-app-root">
+        <!-- main @s -->
+        <div class="nk-main ">
+            <!-- sidebar @s -->
+            <div class="nk-sidebar nk-sidebar-fixed is-light " data-content="sidebarMenu">
+                <div class="nk-sidebar-element nk-sidebar-head">
+                    <div class="nk-sidebar-brand">
+                        <a href="html/index.html" class="logo-link nk-sidebar-logo">
+                            <img class="logo-light logo-img" src="./images/logo.png" srcset="./images/logo2x.png 2x" alt="logo">
+                            <img class="logo-dark logo-img" src="./images/logo-dark.png" srcset="./images/logo-dark2x.png 2x" alt="logo-dark">
+                            <img class="logo-small logo-img logo-img-small" src="./images/logo-small.png" srcset="./images/logo-small2x.png 2x" alt="logo-small">
+                        </a>
+                    </div>
+                    <div class="nk-menu-trigger mr-n2">
+                        <a href="#" class="nk-nav-toggle nk-quick-nav-icon d-xl-none" data-target="sidebarMenu"><em class="icon ni ni-arrow-left"></em></a>
+                        <a href="#" class="nk-nav-compact nk-quick-nav-icon d-none d-xl-inline-flex" data-target="sidebarMenu"><em class="icon ni ni-menu"></em></a>
+                    </div>
+                </div>
+                <!-- .nk-sidebar-element -->
+                <div class="nk-sidebar-element">
+                    <div class="nk-sidebar-content">
+                        <div class="nk-sidebar-menu" data-simplebar>
+                            <ul class="nk-menu">
+                                <li class="nk-menu-item">
+                                    <a href="html/index.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-dashboard-fill"></em></span>
+                                        <span class="nk-menu-text">Dashboard</span>
+                                    </a>
+                                </li>
+                                <!-- .nk-menu-item -->
+                                <li class="nk-menu-item has-sub">
+                                    <a href="#" class="nk-menu-link nk-menu-toggle">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-book-fill"></em></span>
+                                        <span class="nk-menu-text">Mata Kuliah</span>
+                                    </a>
+                                    <ul class="nk-menu-sub">
+                                        <li class="nk-menu-item">
+                                            <a href="html/kategori-mata-kuliah.html" class="nk-menu-link"><span class="nk-menu-text">Kategori</span></a>
+                                        </li>
+                                        <li class="nk-menu-item">
+                                            <a href="html/mata-kuliah.html" class="nk-menu-link"><span class="nk-menu-text">Daftar Mata kuliah</span></a>
+                                        </li>
+                                    </ul>
+                                    <!-- .nk-menu-sub -->
+                                </li>
+                                <!-- .nk-menu-item -->
+                                <li class="nk-menu-item has-sub">
+                                    <a href="#" class="nk-menu-link nk-menu-toggle">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-user-fill"></em></span>
+                                        <span class="nk-menu-text">Dosen</span>
+                                    </a>
+                                    <ul class="nk-menu-sub">
+                                        <li class="nk-menu-item">
+                                            <a href="html/daftar-dosen.html" class="nk-menu-link"><span class="nk-menu-text">Daftar Dosen</span></a>
+                                        </li>
+                                        <li class="nk-menu-item">
+                                            <a href="html/detail-dosen.html" class="nk-menu-link"><span class="nk-menu-text">Detail Dosen</span></a>
+                                        </li>
+                                    </ul>
+                                    <!-- .nk-menu-sub -->
+                                </li>
+                                <!-- .nk-menu-item -->
+                                <li class="nk-menu-item">
+                                    <a href="html/mahasiswa.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-users-fill"></em></span>
+                                        <span class="nk-menu-text">Mahasiswa</span>
+                                    </a>
+                                </li>
+                                <!-- .nk-menu-item -->
+                                <li class="nk-menu-item has-sub">
+                                    <a href="#" class="nk-menu-link nk-menu-toggle">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-property-add"></em></span>
+                                        <span class="nk-menu-text">Pendaftaran</span>
+                                    </a>
+                                    <ul class="nk-menu-sub">
+                                        <li class="nk-menu-item">
+                                            <a href="html/history-pendaftaran.html" class="nk-menu-link"><span class="nk-menu-text">History Pendaftaran</span></a>
+                                        </li>
+                                        <li class="nk-menu-item">
+                                            <a href="html/pendaftaran-mahasiswa.html" class="nk-menu-link"><span class="nk-menu-text">Input Pendaftaran Mahasiswa</span></a>
+                                        </li>
+                                    </ul>
+                                    <!-- .nk-menu-sub -->
+                                </li>
+                                <!-- .nk-menu-item -->
+                                <li class="nk-menu-item">
+                                    <a href="html/message.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-chat-fill"></em></span>
+                                        <span class="nk-menu-text">Messages</span>
+                                    </a>
+                                </li>
+                                <!-- .nk-menu-item -->
+                                <li class="nk-menu-item">
+                                    <a href="html/profil-admin.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-account-setting-fill"></em></span>
+                                        <span class="nk-menu-text">Admin profile</span>
+                                    </a>
+                                </li>
+                                <!-- .nk-menu-item -->
+                                <li class="nk-menu-item has-sub">
+                                    <a href="#" class="nk-menu-link nk-menu-toggle">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-file-docs"></em></span>
+                                        <span class="nk-menu-text">Invoice</span>
+                                    </a>
+                                    <ul class="nk-menu-sub">
+                                        <li class="nk-menu-item">
+                                            <a href="html/daftar-invoice.html" class="nk-menu-link"><span class="nk-menu-text">Daftar Invoice</span></a>
+                                        </li>
+                                        <li class="nk-menu-item">
+                                            <a href="html/detail-invoice.html" class="nk-menu-link"><span class="nk-menu-text">Detail Invoice</span></a>
+                                        </li>
+                                    </ul>
+                                    <!-- .nk-menu-sub -->
+                                </li>
+                                <!-- .nk-menu-item -->
+                                <li class="nk-menu-item">
+                                    <a href="html/settings.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-setting-alt-fill"></em></span>
+                                        <span class="nk-menu-text">Settings</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- .nk-menu -->
+                        </div>
+                        <!-- .nk-sidebar-menu -->
+                    </div>
+                    <!-- .nk-sidebar-content -->
+                </div>
+                <!-- .nk-sidebar-element -->
+            </div>
+            <!-- sidebar @e -->
+            <!-- wrap @s -->
+            <div class="nk-wrap ">
+                <!-- main header @s -->
+                <div class="nk-header nk-header-fixed is-light">
+                    <div class="container-fluid">
+                        <div class="nk-header-wrap">
+                            <div class="nk-menu-trigger d-xl-none ml-n1">
+                                <a href="#" class="nk-nav-toggle nk-quick-nav-icon" data-target="sidebarMenu"><em class="icon ni ni-menu"></em></a>
+                            </div>
+                            <div class="nk-header-brand d-xl-none">
+                                <a href="html/index.html" class="logo-link">
+                                    <img class="logo-light logo-img" src="./images/logo.png" srcset="./images/logo2x.png 2x" alt="logo">
+                                    <img class="logo-dark logo-img" src="./images/logo-dark.png" srcset="./images/logo-dark2x.png 2x" alt="logo-dark">
+                                </a>
+                            </div>
+                            <!-- .nk-header-brand -->
+                            <div class="nk-header-search ml-3 ml-xl-0">
+                                <em class="icon ni ni-search"></em>
+                                <input type="text" class="form-control border-transparent form-focus-none" placeholder="Search anything">
+                            </div>
+                            <!-- .nk-header-news -->
+                            <div class="nk-header-tools">
+                                <ul class="nk-quick-nav">
+                                    <li class="dropdown chats-dropdown hide-mb-xs">
+                                        <a href="#" class="dropdown-toggle nk-quick-nav-icon" data-toggle="dropdown">
+                                            <div class="icon-status icon-status-na"><em class="icon ni ni-comments"></em></div>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-xl dropdown-menu-right">
+                                            <div class="dropdown-head">
+                                                <span class="sub-title nk-dropdown-title">Recent Chats</span>
+                                                <a href="#">Setting</a>
+                                            </div>
+                                            <div class="dropdown-body">
+                                                <ul class="chat-list">
+                                                    <li class="chat-item">
+                                                        <a class="chat-link" href="html/message.html">
+                                                            <div class="chat-media user-avatar">
+                                                                <span>RA</span>
+                                                                <span class="status dot dot-lg dot-gray"></span>
+                                                            </div>
+                                                            <div class="chat-info">
+                                                                <div class="chat-from">
+                                                                    <div class="name">Reza Arif</div>
+                                                                    <span class="time">Now</span>
+                                                                </div>
+                                                                <div class="chat-context">
+                                                                    <div class="text">You: Bro, Besok jadwalnya bu atri online atau offline?.</div>
+                                                                    <div class="status delivered">
+                                                                        <em class="icon ni ni-check-circle-fill"></em>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- .chat-item -->
+                                                    <li class="chat-item is-unread">
+                                                        <a class="chat-link" href="html/message.html">
+                                                            <div class="chat-media user-avatar bg-pink">
+                                                                <span>WC</span>
+                                                                <span class="status dot dot-lg dot-success"></span>
+                                                            </div>
+                                                            <div class="chat-info">
+                                                                <div class="chat-from">
+                                                                    <div class="name">Wulan Cahyaningrum</div>
+                                                                    <span class="time">16:49 WIB</span>
+                                                                </div>
+                                                                <div class="chat-context">
+                                                                    <div class="text">Yo, bisa bantu aku nggak ?</div>
+                                                                    <div class="status unread">
+                                                                        <em class="icon ni ni-bullet-fill"></em>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- .chat-item -->
+                                                    <li class="chat-item">
+                                                        <a class="chat-link" href="html/message.html">
+                                                            <div class="chat-media user-avatar">
+                                                                <img src="./images/avatar/b-sm.jpg" alt="">
+                                                            </div>
+                                                            <div class="chat-info">
+                                                                <div class="chat-from">
+                                                                    <div class="name">Aditya Restu Adji</div>
+                                                                    <span class="time">20 Januari</span>
+                                                                </div>
+                                                                <div class="chat-context">
+                                                                    <div class="text">Udah ngerjain tugasnya pak lilik belum yo?</div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- .chat-item -->
+                                                    <li class="chat-item">
+                                                        <a class="chat-link" href="html/message.html">
+                                                            <div class="chat-media user-avatar user-avatar-multiple">
+                                                                <div class="user-avatar">
+                                                                    <img src="./images/avatar/c-sm.jpg" alt="">
+                                                                </div>
+                                                                <div class="user-avatar">
+                                                                    <span>K4</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="chat-info">
+                                                                <div class="chat-from">
+                                                                    <div class="name">Kelompok 4</div>
+                                                                    <span class="time">21 Januari</span>
+                                                                </div>
+                                                                <div class="chat-context">
+                                                                    <div class="text">You: Tugasnya pak lilik kurang dikit nih ada yang bisa bantu?</div>
+                                                                    <div class="status sent">
+                                                                        <em class="icon ni ni-check-circle"></em>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- .chat-item -->
+                                                    <li class="chat-item">
+                                                        <a class="chat-link" href="html/message.html">
+                                                            <div class="chat-media user-avatar">
+                                                                <img src="./images/avatar/a-sm.jpg" alt="">
+                                                                <span class="status dot dot-lg dot-success"></span>
+                                                            </div>
+                                                            <div class="chat-info">
+                                                                <div class="chat-from">
+                                                                    <div class="name">Ahmad Fawaz</div>
+                                                                    <span class="time">19 Januari</span>
+                                                                </div>
+                                                                <div class="chat-context">
+                                                                    <div class="text">Yo, Udah ngerjain tugasnya pak Febri?</div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- .chat-item -->
+                                                    <li class="chat-item">
+                                                        <a class="chat-link" href="html/message.html">
+                                                            <div class="chat-media user-avatar bg-purple">
+                                                                <span>LNF</span>
+                                                            </div>
+                                                            <div class="chat-info">
+                                                                <div class="chat-from">
+                                                                    <div class="name">Latifah Nur Fitriana</div>
+                                                                    <span class="time">18 Januari</span>
+                                                                </div>
+                                                                <div class="chat-context">
+                                                                    <div class="text">You: Tugas RPL udah sampai mana fit?</div>
+                                                                    <div class="status sent">
+                                                                        <em class="icon ni ni-check-circle"></em>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- .chat-item -->
+                                                </ul>
+                                                <!-- .chat-list -->
+                                            </div>
+                                            <!-- .nk-dropdown-body -->
+                                            <div class="dropdown-foot center">
+                                                <a href="html/message.html">View All</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown notification-dropdown">
+                                        <a href="#" class="dropdown-toggle nk-quick-nav-icon" data-toggle="dropdown">
+                                            <div class="icon-status icon-status-info"><em class="icon ni ni-bell"></em></div>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-xl dropdown-menu-right">
+                                            <div class="dropdown-head">
+                                                <span class="sub-title nk-dropdown-title">Notifications</span>
+                                                <a href="#">Mark All as Read</a>
+                                            </div>
+                                            <div class="dropdown-body">
+                                                <div class="nk-notification">
+                                                    <div class="nk-notification-item dropdown-inner">
+                                                        <div class="nk-notification-icon">
+                                                            <em class="icon ni ni-comments"></em>
+                                                        </div>
+                                                        <div class="nk-notification-content">
+                                                            <div class="nk-notification-text">Chat From <span>Reza Arif</span></div>
+                                                            <div class="nk-notification-time">Now</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- .nk-notification -->
+                                            </div>
+                                            <!-- .nk-dropdown-body -->
+                                            <div class="dropdown-foot center">
+                                                <a href="#">View All</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown user-dropdown">
+                                        <a href="#" class="dropdown-toggle mr-n1" data-toggle="dropdown">
+                                            <div class="user-toggle">
+                                                <div class="user-avatar sm">
+                                                    <em class="icon ni ni-user-alt"></em>
+                                                </div>
+                                                <div class="user-info d-none d-xl-block">
+                                                    <div class="user-status user-status-active">Administator</div>
+                                                    <div class="user-name dropdown-indicator">Charisma Deo Sagitarius</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-md dropdown-menu-right">
+                                            <div class="dropdown-inner user-card-wrap bg-lighter d-none d-md-block">
+                                                <div class="user-card">
+                                                    <div class="user-avatar">
+                                                        <span>CDS</span>
+                                                    </div>
+                                                    <div class="user-info">
+                                                        <span class="lead-text">Charisma Deo Sagitarius</span>
+                                                        <span class="sub-text">charismadeos@gmail.com</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-inner">
+                                                <ul class="link-list">
+                                                    <li><a href="html/profil-admin.html"><em class="icon ni ni-user-alt"></em><span>Lihat Profil</span></a></li>
+                                                    <li><a href="html/setting-profil-admin.html"><em class="icon ni ni-setting-alt"></em><span>Setting Akun</span></a>
+                                                    </li>
+                                                    <li><a href="html/aktivitas-profil-admin.html"><em class="icon ni ni-activity-alt"></em><span>Aktivitas Login</span></a>
+                                                    </li>
+                                                    <li><a class="dark-switch" href="#"><em class="icon ni ni-moon"></em><span>Dark Mode</span></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="dropdown-inner">
+                                                <ul class="link-list">
+                                                    <li><a href="#"><em class="icon ni ni-signout"></em><span>Sign out</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- .nk-header-wrap -->
+                    </div>
+                    <!-- .container-fliud -->
+                </div>
+                <!-- main header @e -->
+                <!-- content @s -->
+                <div class="nk-content p-0">
+                    <div class="nk-content-inner">
+                        <div class="nk-content-body">
+                            <div class="nk-chat">
+                                <div class="nk-chat-aside">
+                                    <div class="nk-chat-aside-head">
+                                        <div class="nk-chat-aside-user">
+                                            <div class="dropdown">
+                                                <a href="#" class="dropdown-toggle dropdown-indicator" data-toggle="dropdown">
+                                                    <div class="user-avatar">
+                                                        <img src="./images/avatar/b-sm.jpg" alt="">
+                                                    </div>
+                                                    <div class="title">Chat</div>
+                                                </a>
+                                                <div class="dropdown-menu">
+                                                    <ul class="link-list-opt no-bdr">
+                                                        <li><a href="#"><span>Kontak</span></a></li>
+                                                        <li><a href="#"><span>Grup</span></a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="#"><span>Help</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- .nk-chat-aside-user -->
+                                        <ul class="nk-chat-aside-tools g-2">
+                                            <li>
+                                                <div class="dropdown">
+                                                    <a href="#" class="btn btn-round btn-icon btn-light dropdown-toggle" data-toggle="dropdown">
+                                                        <em class="icon ni ni-setting-alt-fill"></em>
+                                                    </a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <ul class="link-list-opt no-bdr">
+                                                            <li><a href="#"><span>Settings</span></a></li>
+                                                            <li class="divider"></li>
+                                                            <li><a href="#"><span>Message Requests</span></a></li>
+                                                            <li><a href="#"><span>Archives Chats</span></a></li>
+                                                            <li><a href="#"><span>Unread Chats</span></a></li>
+                                                            <li><a href="#"><span>Group Chats</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="btn btn-round btn-icon btn-light">
+                                                    <em class="icon ni ni-edit-alt-fill"></em>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <!-- .nk-chat-aside-tools -->
+                                    </div>
+                                    <!-- .nk-chat-aside-head -->
+                                    <div class="nk-chat-aside-body" data-simplebar>
+                                        <div class="nk-chat-aside-search">
+                                            <div class="form-group">
+                                                <div class="form-control-wrap">
+                                                    <div class="form-icon form-icon-left">
+                                                        <em class="icon ni ni-search"></em>
+                                                    </div>
+                                                    <input type="text" class="form-control form-round" id="default-03" placeholder="Search by name">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- .nk-chat-aside-search -->
+                                        <div class="nk-chat-aside-panel nk-chat-fav">
+                                            <h6 class="title overline-title-alt">Favorites</h6>
+                                            <ul class="fav-list">
+                                                <li>
+                                                    <a href="#" class="btn btn-lg btn-icon btn-outline-light btn-white btn-round">
+                                                        <em class="icon ni ni-plus"></em>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="user-avatar">
+                                                            <img src="./images/avatar/b-sm.jpg" alt="">
+                                                            <span class="status dot dot-lg dot-success"></span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="user-avatar">
+                                                            <span>RA</span>
+                                                            <span class="status dot dot-lg dot-success"></span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="user-avatar bg-pink">
+                                                            <span>WC</span>
+                                                            <span class="status dot dot-lg dot-success"></span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="user-avatar bg-purple">
+                                                            <span>LNF</span>
+                                                            <span class="status dot dot-lg dot-success"></span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="user-avatar">
+                                                            <img src="./images/avatar/a-sm.jpg" alt="">
+                                                            <span class="status dot dot-lg dot-success"></span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="user-avatar">
+                                                            <img src="./images/avatar/c-sm.jpg" alt="">
+                                                            <span class="status dot dot-lg dot-success"></span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="user-avatar">
+                                                            <img src="./images/avatar/d-sm.jpg" alt="">
+                                                            <span class="status dot dot-lg dot-success"></span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <div class="user-avatar bg-info">
+                                                            <span>K4</span>
+                                                            <span class="status dot dot-lg dot-success"></span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!-- .fav-list -->
+                                        </div>
+                                        <!-- .nk-chat-fav -->
+                                        <div class="nk-chat-list">
+                                            <h6 class="title overline-title-alt">Messages</h6>
+                                            <ul class="chat-list">
+                                                <li class="chat-item">
+                                                    <a class="chat-link chat-open" href="#">
+                                                        <div class="chat-media user-avatar bg-purple">
+                                                            <span>RA</span>
+                                                            <span class="status dot dot-lg dot-gray"></span>
+                                                        </div>
+                                                        <div class="chat-info">
+                                                            <div class="chat-from">
+                                                                <div class="name">Reza Arif</div>
+                                                                <span class="time">Now</span>
+                                                            </div>
+                                                            <div class="chat-context">
+                                                                <div class="text">
+                                                                    <p>You: Bro Besok jadwalnya bu atri offline atau online?.</p>
+                                                                </div>
+                                                                <div class="status delivered">
+                                                                    <em class="icon ni ni-check-circle-fill"></em>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="chat-actions">
+                                                        <div class="dropdown">
+                                                            <a href="#" class="btn btn-icon btn-sm btn-trigger dropdown-toggle" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                <ul class="link-list-opt no-bdr">
+                                                                    <li><a href="#">Mute</a></li>
+                                                                    <li class="divider"></li>
+                                                                    <li><a href="#">Hide</a></li>
+                                                                    <li><a href="#">Delete</a></li>
+                                                                    <li class="divider"></li>
+                                                                    <li><a href="#">Mark as Unread</a></li>
+                                                                    <li><a href="#">Ignore Messages</a></li>
+                                                                    <li><a href="#">Block Messages</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <!-- .chat-item -->
+                                            </ul>
+                                            <!-- .chat-list -->
+                                        </div>
+                                        <!-- .nk-chat-list -->
+                                    </div>
+                                </div>
+                                <!-- .nk-chat-aside -->
+                                <div class="nk-chat-body profile-shown">
+                                    <div class="nk-chat-head">
+                                        <ul class="nk-chat-head-info">
+                                            <li class="nk-chat-body-close">
+                                                <a href="#" class="btn btn-icon btn-trigger nk-chat-hide ml-n1"><em class="icon ni ni-arrow-left"></em></a>
+                                            </li>
+                                            <li class="nk-chat-head-user">
+                                                <div class="user-card">
+                                                    <div class="user-avatar bg-purple">
+                                                        <span>RA</span>
+                                                    </div>
+                                                    <div class="user-info">
+                                                        <div class="lead-text">Reza Arif</div>
+                                                        <div class="sub-text"><span class="d-none d-sm-inline mr-1">Active </span> 35m ago</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <ul class="nk-chat-head-tools">
+                                            <li><a href="#" class="btn btn-icon btn-trigger text-primary"><em class="icon ni ni-call-fill"></em></a></li>
+                                            <li><a href="#" class="btn btn-icon btn-trigger text-primary"><em class="icon ni ni-video-fill"></em></a></li>
+                                            <li class="d-none d-sm-block">
+                                                <div class="dropdown">
+                                                    <a href="#" class="dropdown-toggle btn btn-icon btn-trigger text-primary" data-toggle="dropdown"><em class="icon ni ni-setting-fill"></em></a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <ul class="link-list-opt no-bdr">
+                                                            <li><a class="dropdown-item" href="#"><em class="icon ni ni-archive"></em><span>Make as Archive</span></a></li>
+                                                            <li><a class="dropdown-item" href="#"><em class="icon ni ni-cross-c"></em><span>Remove Conversion</span></a></li>
+                                                            <li><a class="dropdown-item" href="#"><em class="icon ni ni-setting"></em><span>More Options</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="mr-n1 mr-md-n2"><a href="#" class="btn btn-icon btn-trigger text-primary chat-profile-toggle"><em class="icon ni ni-alert-circle-fill"></em></a></li>
+                                        </ul>
+                                        <div class="nk-chat-head-search">
+                                            <div class="form-group">
+                                                <div class="form-control-wrap">
+                                                    <div class="form-icon form-icon-left">
+                                                        <em class="icon ni ni-search"></em>
+                                                    </div>
+                                                    <input type="text" class="form-control form-round" id="chat-search" placeholder="Search in Conversation">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- .nk-chat-head-search -->
+                                    </div>
+                                    <!-- .nk-chat-head -->
+                                    <div class="nk-chat-panel" data-simplebar>
+                                        <div class="chat is-you">
+                                            <div class="chat-avatar">
+                                                <div class="user-avatar bg-purple">
+                                                    <span>RA</span>
+                                                </div>
+                                            </div>
+                                            <div class="chat-content">
+                                                <div class="chat-bubbles">
+                                                    <div class="chat-bubble">
+                                                        <div class="chat-msg"> Hello! </div>
+                                                        <ul class="chat-msg-more">
+                                                            <li class="d-none d-sm-block"><a href="#" class="btn btn-icon btn-sm btn-trigger"><em class="icon ni ni-reply-fill"></em></a></li>
+                                                            <li>
+                                                                <div class="dropdown">
+                                                                    <a href="#" class="btn btn-icon btn-sm btn-trigger dropdown-toggle" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                    <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
+                                                                        <ul class="link-list-opt no-bdr">
+                                                                            <li class="d-sm-none"><a href="#"><em class="icon ni ni-reply-fill"></em> Reply</a></li>
+                                                                            <li><a href="#"><em class="icon ni ni-pen-alt-fill"></em> Edit</a></li>
+                                                                            <li><a href="#"><em class="icon ni ni-trash-fill"></em> Remove</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="chat-bubble">
+                                                        <div class="chat-msg"> Cuy Tugas Bu atri gimana nih?. </div>
+                                                        <ul class="chat-msg-more">
+                                                            <li class="d-none d-sm-block"><a href="#" class="btn btn-icon btn-sm btn-trigger"><em class="icon ni ni-reply-fill"></em></a></li>
+                                                            <li>
+                                                                <div class="dropdown">
+                                                                    <a href="#" class="btn btn-icon btn-sm btn-trigger dropdown-toggle" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                    <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
+                                                                        <ul class="link-list-opt no-bdr">
+                                                                            <li class="d-sm-none"><a href="#"><em class="icon ni ni-reply-fill"></em> Reply</a></li>
+                                                                            <li><a href="#"><em class="icon ni ni-pen-alt-fill"></em> Edit</a></li>
+                                                                            <li><a href="#"><em class="icon ni ni-trash-fill"></em> Remove</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <ul class="chat-meta">
+                                                    <li>Reza Arif</li>
+                                                    <li>29 Apr, 2020 4:28 PM</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- .chat -->
+                                        <div class="chat is-me">
+                                            <div class="chat-content">
+                                                <div class="chat-bubbles">
+                                                    <div class="chat-bubble">
+                                                        <div class="chat-msg"> Sorry Bro gw juga belum selesai. </div>
+                                                        <ul class="chat-msg-more">
+                                                            <li class="d-none d-sm-block"><a href="#" class="btn btn-icon btn-sm btn-trigger"><em class="icon ni ni-reply-fill"></em></a></li>
+                                                            <li>
+                                                                <div class="dropdown">
+                                                                    <a href="#" class="btn btn-icon btn-sm btn-trigger dropdown-toggle" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                    <div class="dropdown-menu dropdown-menu-sm">
+                                                                        <ul class="link-list-opt no-bdr">
+                                                                            <li class="d-sm-none"><a href="#"><em class="icon ni ni-reply-fill"></em> Reply</a></li>
+                                                                            <li><a href="#"><em class="icon ni ni-pen-alt-fill"></em> Edit</a></li>
+                                                                            <li><a href="#"><em class="icon ni ni-trash-fill"></em> Remove</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <ul class="chat-meta">
+                                                    <li>Charisma Deo Sagitarius</li>
+                                                    <li>29 Apr, 2020 4:12 PM</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- .chat -->
+                                        <div class="chat is-you">
+                                            <div class="chat-avatar">
+                                                <div class="user-avatar bg-purple">
+                                                    <span>RA</span>
+                                                </div>
+                                            </div>
+                                            <div class="chat-content">
+                                                <div class="chat-bubbles">
+                                                    <div class="chat-bubble">
+                                                        <div class="chat-msg"> Oh Yaudah Bro. </div>
+                                                        <ul class="chat-msg-more">
+                                                            <li class="d-none d-sm-block"><a href="#" class="btn btn-icon btn-sm btn-trigger"><em class="icon ni ni-reply-fill"></em></a></li>
+                                                            <li>
+                                                                <div class="dropdown">
+                                                                    <a href="#" class="btn btn-icon btn-sm btn-trigger dropdown-toggle" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                    <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
+                                                                        <ul class="link-list-opt no-bdr">
+                                                                            <li class="d-sm-none"><a href="#"><em class="icon ni ni-reply-fill"></em> Reply</a></li>
+                                                                            <li><a href="#"><em class="icon ni ni-pen-alt-fill"></em> Edit</a></li>
+                                                                            <li><a href="#"><em class="icon ni ni-trash-fill"></em> Remove</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="chat-bubble">
+                                                        <div class="chat-msg"> Kabarin Kalo udah </div>
+                                                        <ul class="chat-msg-more">
+                                                            <li class="d-none d-sm-block"><a href="#" class="btn btn-icon btn-sm btn-trigger"><em class="icon ni ni-reply-fill"></em></a></li>
+                                                            <li>
+                                                                <div class="dropdown">
+                                                                    <a href="#" class="btn btn-icon btn-sm btn-trigger dropdown-toggle" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                    <div class="dropdown-menu dropdown-menu-sm dropdown-menu-right">
+                                                                        <ul class="link-list-opt no-bdr">
+                                                                            <li class="d-sm-none"><a href="#"><em class="icon ni ni-reply-fill"></em> Reply</a></li>
+                                                                            <li><a href="#"><em class="icon ni ni-pen-alt-fill"></em> Edit</a></li>
+                                                                            <li><a href="#"><em class="icon ni ni-trash-fill"></em> Remove</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <ul class="chat-meta">
+                                                    <li>Reza Arif</li>
+                                                    <li>29 Apr, 2020 4:28 PM</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- .chat -->
+                                        <div class="chat-sap">
+                                            <div class="chat-sap-meta"><span>20 Januari 2022</span></div>
+                                        </div>
+                                        <!-- .chat-sap -->
+                                        <!-- .chat -->
+                                        <div class="chat is-me">
+                                            <div class="chat-content">
+                                                <div class="chat-bubbles">
+                                                    <div class="chat-bubble">
+                                                        <div class="chat-msg"> Bro Besok jadwalnya bu atri offline atau Online </div>
+                                                        <ul class="chat-msg-more">
+                                                            <li class="d-none d-sm-block"><a href="#" class="btn btn-icon btn-sm btn-trigger"><em class="icon ni ni-reply-fill"></em></a></li>
+                                                            <li>
+                                                                <div class="dropdown">
+                                                                    <a href="#" class="btn btn-icon btn-sm btn-trigger dropdown-toggle" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                    <div class="dropdown-menu dropdown-menu-sm">
+                                                                        <ul class="link-list-opt no-bdr">
+                                                                            <li class="d-sm-none"><a href="#"><em class="icon ni ni-reply-fill"></em> Reply</a></li>
+                                                                            <li><a href="#"><em class="icon ni ni-pen-alt-fill"></em> Edit</a></li>
+                                                                            <li><a href="#"><em class="icon ni ni-trash-fill"></em> Remove</a></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <ul class="chat-meta">
+                                                    <li><span>Now</span> <em class="icon ni ni-check-circle-fill"></em></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <!-- .chat -->
+                                    </div>
+                                    <!-- .nk-chat-panel -->
+                                    <div class="nk-chat-editor">
+                                        <div class="nk-chat-editor-upload  ml-n1">
+                                            <a href="#" class="btn btn-sm btn-icon btn-trigger text-primary toggle-opt" data-target="chat-upload"><em class="icon ni ni-plus-circle-fill"></em></a>
+                                            <div class="chat-upload-option" data-content="chat-upload">
+                                                <ul class="">
+                                                    <li><a href="#"><em class="icon ni ni-img-fill"></em></a></li>
+                                                    <li><a href="#"><em class="icon ni ni-camera-fill"></em></a></li>
+                                                    <li><a href="#"><em class="icon ni ni-mic"></em></a></li>
+                                                    <li><a href="#"><em class="icon ni ni-grid-sq"></em></a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="nk-chat-editor-form">
+                                            <div class="form-control-wrap">
+                                                <textarea class="form-control form-control-simple no-resize" rows="1" id="default-textarea" placeholder="Type your message..."></textarea>
+                                            </div>
+                                        </div>
+                                        <ul class="nk-chat-editor-tools g-2">
+                                            <li>
+                                                <a href="#" class="btn btn-sm btn-icon btn-trigger text-primary"><em class="icon ni ni-happyf-fill"></em></a>
+                                            </li>
+                                            <li>
+                                                <button class="btn btn-round btn-primary btn-icon"><em class="icon ni ni-send-alt"></em></button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- .nk-chat-editor -->
+                                    <div class="nk-chat-profile visible" data-simplebar>
+                                        <div class="user-card user-card-s2 my-4">
+                                            <div class="user-avatar md bg-purple">
+                                                <span>RA</span>
+                                            </div>
+                                            <div class="user-info">
+                                                <h5>Reza Arif</h5>
+                                                <span class="sub-text">Active 35m ago</span>
+                                            </div>
+                                            <div class="user-card-menu dropdown">
+                                                <a href="#" class="btn btn-icon btn-sm btn-trigger dropdown-toggle" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                <div class="dropdown-menu dropdown-menu-right">
+                                                    <ul class="link-list-opt no-bdr">
+                                                        <li><a href="#"><em class="icon ni ni-eye"></em><span>View Profile</span></a></li>
+                                                        <li><a href="#"><em class="icon ni ni-na"></em><span>Block Messages</span></a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="chat-profile">
+                                            <div class="chat-profile-group">
+                                                <a href="#" class="chat-profile-head" data-toggle="collapse" data-target="#info-options">
+                                                    <h6 class="title overline-title">Informasi Mahasiswa</h6>
+                                                    <span class="indicator-icon"><em class="icon ni ni-chevron-down"></em></span>
+                                                </a>
+                                                <div class="chat-profile-body collapse show" id="info-options">
+                                                    <div class="chat-profile-body-inner">
+                                                        <ul class="chat-profile-options">
+                                                            <li>
+                                                                <a class="chat-option-link" href="#">
+                                                                    <em class="icon icon-circle bg-light ni ni-call"></em>
+                                                                    <div>
+                                                                        <span class="lead-text">Nomor Telepon</span>
+                                                                        <span class="sub-text">+62-851-2345678</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="chat-option-link" href="#">
+                                                                    <em class="icon icon-circle bg-light ni ni-mail"></em>
+                                                                    <div>
+                                                                        <span class="lead-text">Email</span>
+                                                                        <span class="sub-text">user@gmail.com</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="chat-option-link" href="#">
+                                                                    <em class="icon icon-circle bg-light ni ni-map-pin"></em>
+                                                                    <div>
+                                                                        <span class="lead-text">Alamat</span>
+                                                                        <span class="sub-text">Maju Mundur, Surakarta</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- .chat-profile-group -->
+                                            <div class="chat-profile-group">
+                                                <a href="#" class="chat-profile-head" data-toggle="collapse" data-target="#chat-options">
+                                                    <h6 class="title overline-title">Options</h6>
+                                                    <span class="indicator-icon"><em class="icon ni ni-chevron-down"></em></span>
+                                                </a>
+                                                <div class="chat-profile-body collapse show" id="chat-options">
+                                                    <div class="chat-profile-body-inner">
+                                                        <ul class="chat-profile-options">
+                                                            <li><a class="chat-option-link" href="#"><em class="icon icon-circle bg-light ni ni-edit-alt"></em><span class="lead-text">Nickname</span></a></li>
+                                                            <li><a class="chat-option-link chat-search-toggle" href="#"><em class="icon icon-circle bg-light ni ni-search"></em><span class="lead-text">Search In Conversation</span></a></li>
+                                                            <li><a class="chat-option-link" href="#"><em class="icon icon-circle bg-light ni ni-circle-fill"></em><span class="lead-text">Change Theme</span></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- .chat-profile-group -->
+                                            <div class="chat-profile-group">
+                                                <a href="#" class="chat-profile-head" data-toggle="collapse" data-target="#chat-settings">
+                                                    <h6 class="title overline-title">Settings</h6>
+                                                    <span class="indicator-icon"><em class="icon ni ni-chevron-down"></em></span>
+                                                </a>
+                                                <div class="chat-profile-body collapse show" id="chat-settings">
+                                                    <div class="chat-profile-body-inner">
+                                                        <ul class="chat-profile-settings">
+                                                            <li>
+                                                                <div class="custom-control custom-control-sm custom-switch">
+                                                                    <input type="checkbox" class="custom-control-input" id="customSwitch2">
+                                                                    <label class="custom-control-label" for="customSwitch2">Notifications</label>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <a class="chat-option-link" href="#">
+                                                                    <em class="icon icon-circle bg-light ni ni-bell-off-fill"></em>
+                                                                    <div>
+                                                                        <span class="lead-text">Ignore Messages</span>
+                                                                        <span class="sub-text">You won’t be notified when message you.</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li>
+                                                                <a class="chat-option-link" href="#">
+                                                                    <em class="icon icon-circle bg-light ni ni-alert-fill"></em>
+                                                                    <div>
+                                                                        <span class="lead-text">Something Wrong</span>
+                                                                        <span class="sub-text">Give feedback and report conversion.</span>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- .chat-profile-group -->
+                                            <div class="chat-profile-group">
+                                                <a href="#" class="chat-profile-head" data-toggle="collapse" data-target="#chat-photos">
+                                                    <h6 class="title overline-title">Shared Photos</h6>
+                                                    <span class="indicator-icon"><em class="icon ni ni-chevron-down"></em></span>
+                                                </a>
+                                                <div class="chat-profile-body collapse show" id="chat-photos">
+                                                    <div class="chat-profile-body-inner">
+                                                        <ul class="chat-profile-media">
+                                                            <li>
+                                                                <a href="#"><img src="./images/slides/slide-a.jpg" alt=""></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><img src="./images/slides/slide-b.jpg" alt=""></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#"><img src="./images/slides/slide-c.jpg" alt=""></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- .chat-profile-group -->
+                                        </div>
+                                        <!-- .chat-profile -->
+                                    </div>
+                                    <!-- .nk-chat-profile -->
+                                </div>
+                                <!-- .nk-chat-body -->
+                            </div>
+                            <!-- .nk-chat -->
+                        </div>
+                    </div>
+                </div>
+                <!-- content @e -->
+                <!-- footer @s -->
+                <div class="nk-footer">
+
+                </div>
+                <!-- footer @e -->
+            </div>
+            <!-- wrap @e -->
+        </div>
+        <!-- main @e -->
+    </div>
+    <!-- app-root @e -->
+    <!-- JavaScript -->
+    <script src="./assets/js/bundle.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+    <script src="./assets/js/apps/chats.js"></script>
+</body>
+
+</html>

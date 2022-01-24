@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="zxx" class="js">
+
+<head>
+    <base href="../">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="E-Amik Dashboard">
+    <!-- Fav Icon  -->
+    <link rel="shortcut icon" href="./images/favicon.png">
+    <!-- Page Title  -->
+    <title>Student Details | E-Amik </title>
+    <!-- StyleSheets  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body class="nk-body bg-lighter npc-general has-sidebar ">
+    <div class="nk-app-root">
+        <!-- main @s -->
+        <div class="nk-main ">
+            <!-- sidebar @s -->
+            <div class="nk-sidebar nk-sidebar-fixed is-light " data-content="sidebarMenu">
+                <div class="nk-sidebar-element nk-sidebar-head">
+                    <div class="nk-sidebar-brand">
+                        <a href="html/index.html" class="logo-link nk-sidebar-logo">
+                            <img class="logo-light logo-img" src="./images/logo.png" srcset="./images/logo2x.png 2x" alt="logo">
+                            <img class="logo-dark logo-img" src="./images/logo-dark.png" srcset="./images/logo-dark2x.png 2x" alt="logo-dark">
+                            <img class="logo-small logo-img logo-img-small" src="./images/logo-small.png" srcset="./images/logo-small2x.png 2x" alt="logo-small">
+                        </a>
+                    </div>
+                    <div class="nk-menu-trigger mr-n2">
+                        <a href="#" class="nk-nav-toggle nk-quick-nav-icon d-xl-none" data-target="sidebarMenu"><em class="icon ni ni-arrow-left"></em></a>
+                        <a href="#" class="nk-nav-compact nk-quick-nav-icon d-none d-xl-inline-flex" data-target="sidebarMenu"><em class="icon ni ni-menu"></em></a>
+                    </div>
+                </div>
+                <!-- .nk-sidebar-element -->
+                <div class="nk-sidebar-element">
+                    <div class="nk-sidebar-content">
+                        <div class="nk-sidebar-menu" data-simplebar>
+                            <ul class="nk-menu">
+                                <li class="nk-menu-item">
+                                    <a href="html/index.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-dashboard-fill"></em></span>
+                                        <span class="nk-menu-text">Dashboard</span>
+                                    </a>
+                                </li>
+                                <!-- .nk-menu-item -->
+                                <li class="nk-menu-item has-sub">
+                                    <a href="#" class="nk-menu-link nk-menu-toggle">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-book-fill"></em></span>
+                                        <span class="nk-menu-text">Mata Kuliah</span>
+                                    </a>
+                                    <ul class="nk-menu-sub">
+                                        <li class="nk-menu-item">
+                                            <a href="html/kategori-mata-kuliah.html" class="nk-menu-link"><span class="nk-menu-text">Kategori</span></a>
+                                        </li>
+                                        <li class="nk-menu-item">
+                                            <a href="html/mata-kuliah.html" class="nk-menu-link"><span class="nk-menu-text">Daftar Mata kuliah</span></a>
+                                        </li>
+                                    </ul>
+                                    <!-- .nk-menu-sub -->
+                                </li>
+                                <!-- .nk-menu-item -->
+                                <li class="nk-menu-item has-sub">
+                                    <a href="#" class="nk-menu-link nk-menu-toggle">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-user-fill"></em></span>
+                                        <span class="nk-menu-text">Dosen</span>
+                                    </a>
+                                    <ul class="nk-menu-sub">
+                                        <li class="nk-menu-item">
+                                            <a href="html/daftar-dosen.html" class="nk-menu-link"><span class="nk-menu-text">Daftar Dosen</span></a>
+                                        </li>
+                                        <li class="nk-menu-item">
+                                            <a href="html/detail-dosen.html" class="nk-menu-link"><span class="nk-menu-text">Detail Dosen</span></a>
+                                        </li>
+                                    </ul>
+                                    <!-- .nk-menu-sub -->
+                                </li>
+                                <!-- .nk-menu-item -->
+                                <li class="nk-menu-item">
+                                    <a href="html/mahasiswa.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-users-fill"></em></span>
+                                        <span class="nk-menu-text">Mahasiswa</span>
+                                    </a>
+                                </li>
+                                <!-- .nk-menu-item -->
+                                <li class="nk-menu-item has-sub">
+                                    <a href="#" class="nk-menu-link nk-menu-toggle">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-property-add"></em></span>
+                                        <span class="nk-menu-text">Pendaftaran</span>
+                                    </a>
+                                    <ul class="nk-menu-sub">
+                                        <li class="nk-menu-item">
+                                            <a href="html/history-pendaftaran.html" class="nk-menu-link"><span class="nk-menu-text">History Pendaftaran</span></a>
+                                        </li>
+                                        <li class="nk-menu-item">
+                                            <a href="html/pendaftaran-mahasiswa.html" class="nk-menu-link"><span class="nk-menu-text">Input Pendaftaran Mahasiswa</span></a>
+                                        </li>
+                                    </ul>
+                                    <!-- .nk-menu-sub -->
+                                </li>
+                                <!-- .nk-menu-item -->
+                                <li class="nk-menu-item">
+                                    <a href="html/message.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-chat-fill"></em></span>
+                                        <span class="nk-menu-text">Messages</span>
+                                    </a>
+                                </li>
+                                <!-- .nk-menu-item -->
+                                <li class="nk-menu-item">
+                                    <a href="html/profil-admin.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-account-setting-fill"></em></span>
+                                        <span class="nk-menu-text">Admin profile</span>
+                                    </a>
+                                </li>
+                                <!-- .nk-menu-item -->
+                                <li class="nk-menu-item has-sub">
+                                    <a href="#" class="nk-menu-link nk-menu-toggle">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-file-docs"></em></span>
+                                        <span class="nk-menu-text">Invoice</span>
+                                    </a>
+                                    <ul class="nk-menu-sub">
+                                        <li class="nk-menu-item">
+                                            <a href="html/daftar-invoice.html" class="nk-menu-link"><span class="nk-menu-text">Daftar Invoice</span></a>
+                                        </li>
+                                        <li class="nk-menu-item">
+                                            <a href="html/detail-invoice.html" class="nk-menu-link"><span class="nk-menu-text">Detail Invoice</span></a>
+                                        </li>
+                                    </ul>
+                                    <!-- .nk-menu-sub -->
+                                </li>
+                                <!-- .nk-menu-item -->
+                                <li class="nk-menu-item">
+                                    <a href="html/settings.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon"><em class="icon ni ni-setting-alt-fill"></em></span>
+                                        <span class="nk-menu-text">Settings</span>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- .nk-menu -->
+                        </div>
+                        <!-- .nk-sidebar-menu -->
+                    </div>
+                    <!-- .nk-sidebar-content -->
+                </div>
+                <!-- .nk-sidebar-element -->
+            </div>
+            <!-- sidebar @e -->
+            <!-- wrap @s -->
+            <div class="nk-wrap ">
+                <!-- main header @s -->
+                <div class="nk-header nk-header-fixed is-light">
+                    <div class="container-fluid">
+                        <div class="nk-header-wrap">
+                            <div class="nk-menu-trigger d-xl-none ml-n1">
+                                <a href="#" class="nk-nav-toggle nk-quick-nav-icon" data-target="sidebarMenu"><em class="icon ni ni-menu"></em></a>
+                            </div>
+                            <div class="nk-header-brand d-xl-none">
+                                <a href="html/index.html" class="logo-link">
+                                    <img class="logo-light logo-img" src="./images/logo.png" srcset="./images/logo2x.png 2x" alt="logo">
+                                    <img class="logo-dark logo-img" src="./images/logo-dark.png" srcset="./images/logo-dark2x.png 2x" alt="logo-dark">
+                                </a>
+                            </div>
+                            <!-- .nk-header-brand -->
+                            <div class="nk-header-search ml-3 ml-xl-0">
+                                <em class="icon ni ni-search"></em>
+                                <input type="text" class="form-control border-transparent form-focus-none" placeholder="Search anything">
+                            </div>
+                            <!-- .nk-header-news -->
+                            <div class="nk-header-tools">
+                                <ul class="nk-quick-nav">
+                                    <li class="dropdown chats-dropdown hide-mb-xs">
+                                        <a href="#" class="dropdown-toggle nk-quick-nav-icon" data-toggle="dropdown">
+                                            <div class="icon-status icon-status-na"><em class="icon ni ni-comments"></em></div>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-xl dropdown-menu-right">
+                                            <div class="dropdown-head">
+                                                <span class="sub-title nk-dropdown-title">Recent Chats</span>
+                                                <a href="#">Setting</a>
+                                            </div>
+                                            <div class="dropdown-body">
+                                                <ul class="chat-list">
+                                                    <li class="chat-item">
+                                                        <a class="chat-link" href="html/message.html">
+                                                            <div class="chat-media user-avatar">
+                                                                <span>RA</span>
+                                                                <span class="status dot dot-lg dot-gray"></span>
+                                                            </div>
+                                                            <div class="chat-info">
+                                                                <div class="chat-from">
+                                                                    <div class="name">Reza Arif</div>
+                                                                    <span class="time">Now</span>
+                                                                </div>
+                                                                <div class="chat-context">
+                                                                    <div class="text">You: Bro, Besok jadwalnya bu atri online atau offline?.</div>
+                                                                    <div class="status delivered">
+                                                                        <em class="icon ni ni-check-circle-fill"></em>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- .chat-item -->
+                                                    <li class="chat-item is-unread">
+                                                        <a class="chat-link" href="html/message.html">
+                                                            <div class="chat-media user-avatar bg-pink">
+                                                                <span>WC</span>
+                                                                <span class="status dot dot-lg dot-success"></span>
+                                                            </div>
+                                                            <div class="chat-info">
+                                                                <div class="chat-from">
+                                                                    <div class="name">Wulan Cahyaningrum</div>
+                                                                    <span class="time">16:49 WIB</span>
+                                                                </div>
+                                                                <div class="chat-context">
+                                                                    <div class="text">Yo, bisa bantu aku nggak ?</div>
+                                                                    <div class="status unread">
+                                                                        <em class="icon ni ni-bullet-fill"></em>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- .chat-item -->
+                                                    <li class="chat-item">
+                                                        <a class="chat-link" href="html/message.html">
+                                                            <div class="chat-media user-avatar">
+                                                                <img src="./images/avatar/b-sm.jpg" alt="">
+                                                            </div>
+                                                            <div class="chat-info">
+                                                                <div class="chat-from">
+                                                                    <div class="name">Aditya Restu Adji</div>
+                                                                    <span class="time">20 Januari</span>
+                                                                </div>
+                                                                <div class="chat-context">
+                                                                    <div class="text">Udah ngerjain tugasnya pak lilik belum yo?</div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- .chat-item -->
+                                                    <li class="chat-item">
+                                                        <a class="chat-link" href="html/message.html">
+                                                            <div class="chat-media user-avatar user-avatar-multiple">
+                                                                <div class="user-avatar">
+                                                                    <img src="./images/avatar/c-sm.jpg" alt="">
+                                                                </div>
+                                                                <div class="user-avatar">
+                                                                    <span>K4</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="chat-info">
+                                                                <div class="chat-from">
+                                                                    <div class="name">Kelompok 4</div>
+                                                                    <span class="time">21 Januari</span>
+                                                                </div>
+                                                                <div class="chat-context">
+                                                                    <div class="text">You: Tugasnya pak lilik kurang dikit nih ada yang bisa bantu?</div>
+                                                                    <div class="status sent">
+                                                                        <em class="icon ni ni-check-circle"></em>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- .chat-item -->
+                                                    <li class="chat-item">
+                                                        <a class="chat-link" href="html/message.html">
+                                                            <div class="chat-media user-avatar">
+                                                                <img src="./images/avatar/a-sm.jpg" alt="">
+                                                                <span class="status dot dot-lg dot-success"></span>
+                                                            </div>
+                                                            <div class="chat-info">
+                                                                <div class="chat-from">
+                                                                    <div class="name">Ahmad Fawaz</div>
+                                                                    <span class="time">19 Januari</span>
+                                                                </div>
+                                                                <div class="chat-context">
+                                                                    <div class="text">Yo, Udah ngerjain tugasnya pak Febri?</div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- .chat-item -->
+                                                    <li class="chat-item">
+                                                        <a class="chat-link" href="html/message.html">
+                                                            <div class="chat-media user-avatar bg-purple">
+                                                                <span>LNF</span>
+                                                            </div>
+                                                            <div class="chat-info">
+                                                                <div class="chat-from">
+                                                                    <div class="name">Latifah Nur Fitriana</div>
+                                                                    <span class="time">18 Januari</span>
+                                                                </div>
+                                                                <div class="chat-context">
+                                                                    <div class="text">You: Tugas RPL udah sampai mana fit?</div>
+                                                                    <div class="status sent">
+                                                                        <em class="icon ni ni-check-circle"></em>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <!-- .chat-item -->
+                                                </ul>
+                                                <!-- .chat-list -->
+                                            </div>
+                                            <!-- .nk-dropdown-body -->
+                                            <div class="dropdown-foot center">
+                                                <a href="html/message.html">View All</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown notification-dropdown">
+                                        <a href="#" class="dropdown-toggle nk-quick-nav-icon" data-toggle="dropdown">
+                                            <div class="icon-status icon-status-info"><em class="icon ni ni-bell"></em></div>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-xl dropdown-menu-right">
+                                            <div class="dropdown-head">
+                                                <span class="sub-title nk-dropdown-title">Notifications</span>
+                                                <a href="#">Mark All as Read</a>
+                                            </div>
+                                            <div class="dropdown-body">
+                                                <div class="nk-notification">
+                                                    <div class="nk-notification-item dropdown-inner">
+                                                        <div class="nk-notification-icon">
+                                                            <em class="icon ni ni-comments"></em>
+                                                        </div>
+                                                        <div class="nk-notification-content">
+                                                            <div class="nk-notification-text">Chat From <span>Reza Arif</span></div>
+                                                            <div class="nk-notification-time">Now</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- .nk-notification -->
+                                            </div>
+                                            <!-- .nk-dropdown-body -->
+                                            <div class="dropdown-foot center">
+                                                <a href="#">View All</a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown user-dropdown">
+                                        <a href="#" class="dropdown-toggle mr-n1" data-toggle="dropdown">
+                                            <div class="user-toggle">
+                                                <div class="user-avatar sm">
+                                                    <em class="icon ni ni-user-alt"></em>
+                                                </div>
+                                                <div class="user-info d-none d-xl-block">
+                                                    <div class="user-status user-status-active">Administator</div>
+                                                    <div class="user-name dropdown-indicator">Charisma Deo Sagitarius</div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-md dropdown-menu-right">
+                                            <div class="dropdown-inner user-card-wrap bg-lighter d-none d-md-block">
+                                                <div class="user-card">
+                                                    <div class="user-avatar">
+                                                        <span>CDS</span>
+                                                    </div>
+                                                    <div class="user-info">
+                                                        <span class="lead-text">Charisma Deo Sagitarius</span>
+                                                        <span class="sub-text">charismadeos@gmail.com</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dropdown-inner">
+                                                <ul class="link-list">
+                                                    <li><a href="html/profil-admin.html"><em class="icon ni ni-user-alt"></em><span>Lihat Profil</span></a></li>
+                                                    <li><a href="html/setting-profil-admin.html"><em class="icon ni ni-setting-alt"></em><span>Setting Akun</span></a>
+                                                    </li>
+                                                    <li><a href="html/aktivitas-profil-admin.html"><em class="icon ni ni-activity-alt"></em><span>Aktivitas Login</span></a>
+                                                    </li>
+                                                    <li><a class="dark-switch" href="#"><em class="icon ni ni-moon"></em><span>Dark Mode</span></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="dropdown-inner">
+                                                <ul class="link-list">
+                                                    <li><a href="#"><em class="icon ni ni-signout"></em><span>Sign out</span></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- .nk-header-wrap -->
+                    </div>
+                    <!-- .container-fliud -->
+                </div>
+                <!-- main header @e -->
+                <!-- content @s -->
+                <div class="nk-content ">
+                    <div class="container-fluid">
+                        <div class="nk-content-inner">
+                            <div class="nk-content-body">
+                                <div class="nk-block-head nk-block-head-sm">
+                                    <div class="nk-block-between g-3">
+                                        <div class="nk-block-head-content">
+                                            <h3 class="nk-block-title page-title">Mahasiswa / <strong class="text-primary small">Charisma Deo Sagitarius</strong></h3>
+                                        </div>
+                                        <div class="nk-block-head-content">
+                                            <a href="html/mahasiswa.html" class="btn btn-outline-light bg-white d-none d-sm-inline-flex"><em class="icon ni ni-arrow-left"></em><span>Back</span></a>
+                                            <a href="html/mahasiswa.html" class="btn btn-icon btn-outline-light bg-white d-inline-flex d-sm-none"><em class="icon ni ni-arrow-left"></em></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- .nk-block-head -->
+                                <div class="nk-block">
+                                    <div class="card">
+                                        <div class="card-aside-wrap">
+                                            <div class="card-inner card-inner-lg">
+                                                <div class="tab-content">
+                                                    <div class="tab-pan active" id="personal">
+                                                        <div class="nk-block-head">
+                                                            <div class="nk-block-between d-flex justify-content-between">
+                                                                <div class="nk-block-head-content">
+                                                                    <h4 class="nk-block-title">Informasi Mahasiswa</h4>
+                                                                    <div class="nk-block-des">
+                                                                        <p>Informasi Dasar.</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="nk-tab-actions mr-n1">
+                                                                    <a href="#" class="btn btn-icon btn-trigger" data-toggle="modal" data-target="#profile-edit">
+                                                                        <em class="icon ni ni-edit"></em>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- .nk-block-head -->
+                                                        <div class="nk-block">
+                                                            <div class="nk-data data-list">
+                                                                <div class="data-head">
+                                                                    <h6 class="overline-title">Dasar</h6>
+                                                                </div>
+                                                                <div class="data-item">
+                                                                    <div class="data-col">
+                                                                        <span class="data-label">Nama Lengkap</span>
+                                                                        <span class="data-value">Charisma Deo Sagitarius</span>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- data-item -->
+                                                                <div class="data-item">
+                                                                    <div class="data-col">
+                                                                        <span class="data-label">Display Name</span>
+                                                                        <span class="data-value">Deo</span>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- data-item -->
+                                                                <div class="data-item">
+                                                                    <div class="data-col">
+                                                                        <span class="data-label">Email</span>
+                                                                        <span class="data-value">charismadeos@gmail.com</span>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- data-item -->
+                                                                <div class="data-item">
+                                                                    <div class="data-col">
+                                                                        <span class="data-label">Nomor Telepon</span>
+                                                                        <span class="data-value text-soft">+62812345678</span>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- data-item -->
+                                                                <div class="data-item">
+                                                                    <div class="data-col">
+                                                                        <span class="data-label">Tempat, Tanggal Lahir</span>
+                                                                        <span class="data-value">Surakarta, 01 Feb 1986</span>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- data-item -->
+                                                                <div class="data-item" data-tab-target="#address">
+                                                                    <div class="data-col">
+                                                                        <span class="data-label">Address</span>
+                                                                        <span class="data-value">Jl. Maju Mundur,<br>Surakarta, Indonesia</span>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- data-item -->
+                                                            </div>
+                                                            <!-- data-list -->
+                                                        </div>
+                                                        <!-- .nk-block -->
+                                                    </div>
+                                                    <!-- .tab-pan -->
+                                                </div>
+                                                <!-- .tab-content -->
+                                            </div>
+                                            <!-- .card-inner -->
+                                            <div class="card-aside card-aside-left user-aside toggle-slide toggle-slide-left toggle-break-lg" data-content="userAside" data-toggle-screen="lg" data-toggle-overlay="true">
+                                                <div class="card-inner-group" data-simplebar>
+                                                    <div class="card-inner">
+                                                        <div class="user-card">
+                                                            <div class="user-avatar bg-primary">
+                                                                <span>CDS</span>
+                                                            </div>
+                                                            <div class="user-info">
+                                                                <span class="lead-text">Charisma Deo Sagitarius</span>
+                                                                <span class="sub-text">charismadeos@gmail.com</span>
+                                                            </div>
+                                                        </div>
+                                                        <!-- .user-card -->
+                                                    </div>
+                                                    <div class="card-inner p-0">
+                                                        <ul class="link-list-menu">
+                                                            <li>
+                                                                <a class="active" href="html/detail-mahasiswa.html"><em class="icon ni ni-user-fill-c"></em><span>Personal Infomation</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="html/detail-mata-kuliah-mahasiswa.html"><em class="icon ni ni-book-fill"></em><span>Mata Kuliah</span></a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="html/detail-aktivitas-mahasiswa.html"><em class="icon ni ni-activity-round-fill"></em><span>Account Activity</span></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- .card-inner -->
+                                                    <div class="card-inner">
+                                                        <div class="user-account-info py-0">
+                                                            <h6 class="overline-title-alt">Last Login</h6>
+                                                            <p>06-29-2022 02:39 WIB</p>
+                                                            <h6 class="overline-title-alt">Login IP</h6>
+                                                            <p>192.129.243.28</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- .card-inner -->
+                                                </div>
+                                                <!-- .card-inner-group -->
+                                            </div>
+                                            <!-- .card-aside -->
+                                        </div>
+                                        <!-- .card-aside-wrap -->
+                                    </div>
+                                    <!-- .card -->
+                                </div>
+                                <!-- .nk-block -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- content @e -->
+                <!-- footer @s -->
+                <div class="nk-footer">
+
+                </div>
+                <!-- footer @e -->
+            </div>
+            <!-- wrap @e -->
+        </div>
+        <!-- main @e -->
+    </div>
+    <!-- app-root @e -->
+    <!-- @@ Student Edit Modal @e -->
+    <div class="modal fade" role="dialog" id="profile-edit">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <a href="#" class="close" data-dismiss="modal"><em class="icon ni ni-cross-sm"></em></a>
+                <div class="modal-body modal-body-md">
+                    <h5 class="title">Update Student</h5>
+                    <ul class="nk-nav nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#personal-01">Personal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#address">Address</a>
+                        </li>
+                    </ul>
+                    <!-- .nav-tabs -->
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="personal-01">
+                            <div class="row gy-4">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label" for="full-name">Nama Lengkap</label>
+                                        <input type="text" class="form-control" id="full-name" value="" placeholder="Masukkan Nama Lengkap">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label" for="display-name">Display Name</label>
+                                        <input type="text" class="form-control" id="display-name" value="" placeholder="Enter display name">
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label class="form-label">Mata Kuliah yang ingin didaftarkan</label>
+                                        <div class="form-control-wrap">
+                                            <select class="form-select" data-placeholder="Select multiple options">
+                                                <option value="default_option">Pemrograman Dasar</option>
+                                                <option value="option_select_name">Dasar Jaringan Komputer</option>
+                                                <option value="option_select_name">Desain Web</option>
+                                                <option value="option_select_name">Rekayasa Perangkat Lunak</option>
+                                                <option value="option_select_name">Desain Multimedia Digital</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label" for="email">Email</label>
+                                        <input type="email" class="form-control" id="email" value="Email" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label" for="phone-no">Nomor Telepon</label>
+                                        <input type="text" class="form-control" id="phone-no" value="+62" placeholder="Nomor">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label" for="birth-day">Tanggal Lahir</label>
+                                        <input type="text" class="form-control date-picker" id="birth-day" placeholder="tanggal">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="custom-control custom-switch">
+                                        <input type="checkbox" class="custom-control-input" id="latest-sale">
+                                        <label class="custom-control-label" for="latest-sale">gunakan nama lengkap untuk display </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <ul class="align-center flex-wrap flex-sm-nowrap gx-4 gy-2">
+                                        <li>
+                                            <a href="#" class="btn btn-primary">Update Mahasiswa</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-dismiss="modal" class="link link-light">Cancel</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .tab-pane -->
+                        <div class="tab-pane" id="address">
+                            <div class="row gy-4">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label" for="address-l1">Alamat</label>
+                                        <input type="text" class="form-control" id="address-l1" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label class="form-label" for="address-st">State</label>
+                                        <input type="text" class="form-control" id="address-st" value="Surakarta">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <ul class="align-center flex-wrap flex-sm-nowrap gx-4 gy-2">
+                                        <li>
+                                            <a href="#" class="btn btn-primary">Update Alamat</a>
+                                        </li>
+                                        <li>
+                                            <a href="#" data-dismiss="modal" class="link link-light">Cancel</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .tab-pane -->
+                    </div>
+                    <!-- .tab-content -->
+                </div>
+                <!-- .modal-body -->
+            </div>
+            <!-- .modal-content -->
+        </div>
+        <!-- .modal-dialog -->
+    </div>
+    <!-- .modal -->
+    <!-- JavaScript -->
+    <script src="./assets/js/bundle.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+</body>
+
+</html>
